@@ -9,7 +9,7 @@ export const About = () => {
     const techs = data.map(tech => {
         return <div className="platforms">
             <a href={tech.url}>
-                <img src={tech.imgSource}></img>
+                <img alt="" src={tech.imgSource}></img>
             </a>
 
             <h3>

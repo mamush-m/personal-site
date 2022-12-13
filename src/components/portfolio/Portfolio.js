@@ -13,12 +13,12 @@ export const Portfolio = () => {
     useEffect(() => {
         setCount(1)
 
-        if(display || count == 0) {
+        if(display || count === 0) {
                 window.scrollTo(0,0)
         }else {
                 window.scrollTo(0, 10000)
         }
-    }, [display])
+    }, [display, count])
 
     const displayToggle = (e) => {
         setDisplay(!display);
@@ -26,15 +26,12 @@ export const Portfolio = () => {
 
     const creator = e => {
         displayToggle(e)
-        // console.log('this is e', e);
-        // console.log('this is value', e.target.value);
         setIndProject(e.target.innerHTML);
     }
 
-    const createProject = projects.find(project => project.name == indProject);
+    const createProject = projects.find(project => project.name === indProject);
 
     const projectsList = projects.map(project => {
-        // let modal = <Project project={project} display={display} toggle={displayToggle}/>;
         return (
             <div>
                 <ul id="list">
