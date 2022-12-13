@@ -1,0 +1,27 @@
+#contact {
+    height: 100vh;
+    background: linear-gradient(var(--main-text-color), whitesmoke);
+}
+
+#thanks {
+    height: 10%;
+    width: 10%;
+}
+
+#contact p {
+    margin: 50px 100px;
+    line-height: 3rem;
+    font-family: var(--info-font);
+    font-weight: 600;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+}
+
+#hub, #email {
+    color: darkcyan;
+
+}
+
+#hub:visited, #email:visited {
+    color:cornflowerblue;
+}

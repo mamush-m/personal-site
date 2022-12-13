@@ -1,0 +1,69 @@
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 5px 0px;
+    position: relative;
+}
+
+#x {
+    color: red;
+    font-size: 20px;
+}
+
+#x:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#nav p {
+    /* color: rgb(85, 85, 85); */
+    font-weight: 900;
+    font-family: var(--cursive-font);
+    font-size: 30px;
+    text-shadow: 3px -3px 10px whitesmoke;
+}
+
+#nav p > *:hover {
+    color: black;
+    cursor: pointer;
+    text-shadow: 2px 0px 5px whitesmoke;
+    text-decoration: none;
+}
+
+#nav p > *:visited {
+    color: black;
+    text-decoration: none;
+}
+
+
+#logo {
+    height: 50px;
+    width: 50px;
+    margin-left: 50px;
+}
+
+#burger {
+    border-radius: 5px;
+    background-color: var(--main-text-color);
+    position: absolute;
+    right: 50px;
+}
+
+#burger:hover {
+    cursor: pointer;
+}
+
+#items {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: var(--main-text-color);
+    padding: 0px 50px;
+    border-radius: 10px;
+}
+
+#items > * {
+    text-align: center;
+}
